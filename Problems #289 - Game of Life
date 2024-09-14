@@ -1,0 +1,22 @@
+/*
+**the type given is int while the live/die only need digits to represent,
+**so we can use tens to temporarily store its live/die status
+**and update it later
+*/
+void gameOfLife(int** board, int boardSize, int* boardColSize) {
+    int m = boardSize, n = *boardColSize, i, j, a, b, livnei;
+    for (int i = 0; i < m; i++)
+        for (int j = 0; j < n; j++) {
+            livnei = -board[i][j];
+            for (int a = -1; a < 2; a++)
+                if (i + a > -1 && i + a < m)
+                    for (int b = -1; b < 2; b++)
+                        if (j + b > -1 && j + b < n)
+                            livnei += board[i + a][j + b] % 10;
+            if (livnei == 3 || (board[i][j]==1 && livnei == 2))
+                board[i][j] += 10;
+        }
+    for (int i = 0; i < m; i++)
+        for (int j = 0; j < n; j++)
+            board[i][j] = board[i][j] / 10;
+}
