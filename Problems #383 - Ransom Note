@@ -1,0 +1,13 @@
+bool canConstruct(char* ransomNote, char* magazine) {
+    int* base = (int*)malloc(sizeof(int) * 27);
+    for (int i = 0; i < 27; i++)
+        base[i] = 0;
+
+    while (*magazine)
+        base[*magazine++ - 96]++;
+    while (*ransomNote)
+        if (--base[*ransomNote++ - 96] < 0)
+            return false;
+
+    return true;
+}
