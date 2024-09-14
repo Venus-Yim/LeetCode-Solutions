@@ -1,0 +1,29 @@
+bool isHappy(int n) {
+    int t, m = n;
+    while (n != 1) {
+        t = 0;
+        while (n > 0) {
+            t += (n % 10) * (n % 10);
+            n = n / 10;
+        }
+        n = t;
+        t = 0;
+        while (m > 0) {
+            t += (m % 10) * (m % 10);
+            m = m / 10;
+        }
+        m = t;
+        t = 0;
+        while (m > 0) {
+            t += (m % 10) * (m % 10);
+            m = m / 10;
+        }
+        m = t;
+        if (m == n)
+            break;
+    }
+    if (n == 1)
+        return true;
+    else
+        return false;
+}
