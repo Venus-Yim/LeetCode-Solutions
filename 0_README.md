@@ -6,3 +6,4 @@
 - [2024-09-13: Problem #290 - Word Pattern](https://leetcode.com/problems/word-pattern/description/)
 - [2024-09-13: Problem #242 - Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
 - [2024-09-13: Problem #2419 - Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/description/)
+- [2024-09-13: Problem #49 - Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
