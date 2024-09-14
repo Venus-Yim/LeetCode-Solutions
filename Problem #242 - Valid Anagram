@@ -1,0 +1,17 @@
+#include <stdbool.h>
+bool isAnagram(char* s, char* t) {
+    int* base = (int*)malloc(sizeof(int) * 27);
+    for (int i = 0; i < 27; i++)
+        base[i] = 0;
+
+    while (*s)
+        base[*s++ - 96]++;
+    while (*t)
+        if (--base[*t++ - 96] < 0)
+            return false;
+
+    for (int i = 0; i < 27; i++)
+        if (base[i])
+            return false;
+    return true;
+}
