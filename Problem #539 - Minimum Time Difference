@@ -1,0 +1,22 @@
+int tominute(char* s) {
+    return ((s[0] - 48) * 10 + s[1] - 48) * 60 + (s[3] - 48) * 10 + s[4] - 48;
+}
+int cmp(int* a, int* b) { return *a - *b; }
+int min(int a, int b) {
+    if (a > b)
+        return b;
+    else
+        return a;
+}
+int findMinDifference(char** timePoints, int timePointsSize) {
+    int* minutes = (int*)malloc(sizeof(int) * (timePointsSize + 1));
+    int ans = 2400;
+    for (int i = 0; i < timePointsSize; i++)
+        minutes[i] = tominute(timePoints[i]);
+    qsort(minutes, timePointsSize, sizeof(int), cmp);
+    minutes[timePointsSize] = minutes[0];
+    for (int i = 0; i < timePointsSize; i++)
+        ans = min(ans, min(abs(minutes[i] - minutes[i + 1]),
+                           1440 - abs(minutes[i] - minutes[i + 1])));
+    return ans;
+}
