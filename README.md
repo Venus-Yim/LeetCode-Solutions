@@ -8,3 +8,4 @@
 - [2024-09-13: Problem #2419 - Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/description/)
 - [2024-09-13: Problem #49 - Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
 - [2024-09-15: Problem #1371 - Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/description)
+- [2024-09-15: Problem #539 - Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/description)
