@@ -10,3 +10,4 @@
 - [2024-09-15: Problem #1371 - Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/description)
 - [2024-09-15: Problem #539 - Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/description)
 - [2024-09-17: Problem #884 - Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/description)
+- [2024-09-17: Problem #219 - Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description)
