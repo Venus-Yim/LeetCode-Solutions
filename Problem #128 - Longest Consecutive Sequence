@@ -1,0 +1,14 @@
+class Solution(object):
+    def longestConsecutive(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        tmax=0
+        numsset=set(nums)
+        for i in numsset:
+            if i-1 not in numsset:
+                j=1
+                while(i+j in numsset): j+=1
+                if j>tmax :tmax=j
+        return tmax
