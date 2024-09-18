@@ -12,3 +12,5 @@
 - [2024-09-17: Problem #884 - Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/description)
 - [2024-09-17: Problem #219 - Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description)
 - [2024-09-17: Problem #128 - Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description)
+- [2024-09-17: Problem #179 - Largest Number](https://leetcode.com/problems/largest-number/description)
+  
