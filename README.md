@@ -13,4 +13,6 @@
 - [2024-09-17: Problem #219 - Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description)
 - [2024-09-17: Problem #128 - Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description)
 - [2024-09-17: Problem #179 - Largest Number](https://leetcode.com/problems/largest-number/description)
+- [2024-09-19: Problem #241 - Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description)
+
   
