@@ -1,0 +1,30 @@
+class Solution(object):
+    def diffWaysToCompute(self, expression):
+        """
+        :type expression: str
+        :rtype: List[int]
+        """
+        opperations={
+            '+':lambda x,y:x+y,
+            '-':lambda x,y:x-y,
+            '*':lambda x,y:x*y
+        }
+
+        def rec(expression):
+            ans=[]
+
+            for i in range(0,len(expression)):
+                op=expression[i]
+                if op in opperations:
+                    nums1=rec(expression[:i])
+                    nums2=rec(expression[i+1:])
+
+                    for n1 in nums1:
+                        for n2 in nums2:
+                            ans.append(opperations[op](n1,n2))
+
+            if ans==[]: ans.append(int(expression))
+            return ans
+
+        return rec(expression)
+        
