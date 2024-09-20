@@ -1,0 +1,17 @@
+class Solution(object):
+    def summaryRanges(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[str]
+        """
+        ans=[]
+        l=0
+        r=0
+        length=len(nums)
+        while(r<length):
+            while(r<length-1 and nums[r]+1==nums[r+1]):r+=1
+            if(l<r):ans.append(str(nums[l])+"->"+str(nums[r]))
+            else:ans.append(str(nums[l]))
+            r+=1
+            l=r
+        return ans
