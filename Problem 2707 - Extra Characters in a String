@@ -1,0 +1,20 @@
+class Solution(object):
+    def minExtraChar(self, s, dictionary):
+        """
+        :type s: str
+        :type dictionary: List[str]
+        :rtype: int
+        """
+        dic=set(dictionary)
+        ini=set([st[0] for st in dictionary])
+        dp=[i for i in range(0,51)]
+        
+        for i in range(len(s)):
+            if s[i] in ini :
+                for j in range(i+1,len(s)+1):
+                    if(s[i:j] in dic):
+                        dp[j]=min(dp[j],dp[i])
+                    else:
+                        dp[j]=min(dp[j],dp[j-1]+1)
+        
+        return dp[len(s)]
