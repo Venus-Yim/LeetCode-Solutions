@@ -16,7 +16,7 @@
 - [2024-09-19: Problem #241 - Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description)
 - [2024-09-20: Problem #214 - Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/description)
 - [2024-09-20: Problem #228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/description)
-
-
+- [2024-09-23: Problem #2707 - Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description)
+- [2024-09-23: Problem #2707 - Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description)
 
 
