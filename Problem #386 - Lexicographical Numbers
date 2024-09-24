@@ -1,0 +1,35 @@
+class Solution(object):
+    def lexicalOrder(self, n):
+        """
+        :type n: int
+        :rtype: List[int]
+        """
+        map=[1,9,99,999,9999]
+        digit=int(math.floor(math.log10(n))+1)
+        ans=[]
+        size=1
+        ans.append(1)
+        bod=map[digit-1]
+        if str(bod)<str(n):
+            bod=n 
+        print(bod)
+
+        while(ans[size-1]!=bod):
+            ans.append(ans[size-1])
+            curdig=int(math.floor(math.log10(ans[size-1]))+1)
+            if curdig<digit and ans[size]*10<=n:
+                ans[size]*=10
+            else:
+                if ans[size]%10==9:
+                    ans[size]+=1
+                    while(ans[size]%10==0):
+                        ans[size]/=10
+                elif ans[size]==n:
+                    ans[size]=ans[size]/10+1
+                    while(ans[size]%10==0):
+                        ans[size]/=10
+                else:
+                    ans[size]+=1
+            size+=1
+
+        return ans
