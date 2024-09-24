@@ -4,7 +4,7 @@ class Solution(object):
         :type n: int
         :rtype: List[int]
         """
-        map=[1,9,99,999,9999]
+        '''map=[1,9,99,999,9999]
         digit=int(math.floor(math.log10(n))+1)
         ans=[]
         size=1
@@ -32,4 +32,15 @@ class Solution(object):
                     ans[size]+=1
             size+=1
 
+        return ans'''
+        num=1
+        ans=[0]*n
+        for i in range(0,n):
+            ans[i]=num
+            if(num*10<=n):
+                num*=10
+            else:
+                while(num%10==9 or num+1>n):
+                    num/=10
+                num+=1
         return ans
