@@ -17,6 +17,6 @@
 - [2024-09-20: Problem #214 - Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/description)
 - [2024-09-20: Problem #228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/description)
 - [2024-09-23: Problem #2707 - Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description)
-- [2024-09-23: Problem #3043 - Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description)
-- [2024-09-23: Problem #2707 - Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description)
+- [2024-09-24: Problem #3043 - Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description)
+- [2024-09-25: Problem #2707 - Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/description)
 
