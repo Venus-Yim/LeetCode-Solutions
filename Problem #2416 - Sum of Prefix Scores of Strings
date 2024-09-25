@@ -1,0 +1,58 @@
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_end_of_word = False
+        self.sum=0
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word):
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+            node.sum += 1
+
+    def score(self, prefix):
+        node = self.root
+        ans=0
+        for char in prefix:
+            node = node.children[char]
+            ans += node.sum
+        return ans
+class Solution(object):
+    def sumPrefixScores(self, words):
+        """
+        :type words: List[str]
+        :rtype: List[int]
+        """
+        '''
+        Time Limit Excess
+        di=dict()
+        ans=[0]*len(words)
+
+        for s in words:
+            for i in range(len(s)):
+                if(s[:i+1] in di):
+                    di[s[:i+1]]+=1
+                else:
+                    di[s[:i+1]]=1
+        
+        for n in range(len(words)):
+            for i in range(len(words[n])):
+                ans[n]+=di[words[n][:i+1]]
+        
+        return ans
+        '''
+        trie=Trie()
+        ret=[0]*len(words)
+        for s in words:
+            trie.insert(s)
+        for i in range(len(words)):
+            ret[i]=trie.score(words[i])
+        
+        return ret
+        
