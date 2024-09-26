@@ -20,4 +20,4 @@
 - [2024-09-24: Problem #3043 - Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description)
 - [2024-09-25: Problem #386 - Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/description)
 - [2024-09-25: Problem #2416 - Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/description)
-- [2024-09-25: Problem #386 - Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/description)
+- [2024-09-25: Problem #56 - Merge Intervals](https://leetcode.com/problems/merge-intervals/description)
