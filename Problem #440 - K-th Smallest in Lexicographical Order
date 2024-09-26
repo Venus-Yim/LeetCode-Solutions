@@ -1,0 +1,30 @@
+class Solution(object):
+    def count_steps(self,n,cur,next):
+        steps=0
+
+        while(cur<=n):
+            steps+=min(n+1,next)-cur
+            cur*=10
+            next*=10
+        
+        return steps
+        
+    def findKthNumber(self, n, k):
+        """
+        :type n: int
+        :type k: int
+        :rtype: int
+        """
+        cur=1
+        remain_steps=k-1
+
+        while(remain_steps>0):
+            subtree_total_steps=self.count_steps(n,cur,cur+1)
+            if subtree_total_steps<=remain_steps:
+                cur+=1
+                remain_steps-=subtree_total_steps
+            else:
+                cur*=10
+                remain_steps-=1
+            
+        return cur
