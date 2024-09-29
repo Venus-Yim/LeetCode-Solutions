@@ -1,0 +1,71 @@
+class AllOne(object):
+
+    def __init__(self):
+        self.dict={}
+        self.count={}
+        self.max=0
+        self.min=0
+        
+
+    def inc(self, key):
+        """
+        :type key: str
+        :rtype: None
+        """
+        if key in self.dict:
+            self.count[self.dict[key]].remove(key)
+            self.dict[key]+=1
+            if self.dict[key] in self.count:
+                self.count[self.dict[key]].append(key)
+            else:
+                self.count[self.dict[key]]=[key]
+        else:
+            self.dict[key]=1
+            if 1 in self.count:
+                self.count[1].append(key)
+            else:
+                self.count[1]=[key]
+        if self.max==0 or self.dict[key]>self.max: self.max=self.dict[key]
+        if self.min==0 or self.dict[key]<self.min or (self.dict[key]-1==self.min and self.count[self.dict[key]-1]==[]): self.min=self.dict[key]
+
+    def dec(self, key):
+        """
+        :type key: str
+        :rtype: None
+        """
+        self.count[self.dict[key]].remove(key)
+        if self.max==self.dict[key] and self.count[self.dict[key]]==[]:
+            self.max-=1
+        self.dict[key]-=1
+        if self.dict[key]>0: 
+            self.count[self.dict[key]].append(key)
+            if self.dict[key]<self.min:self.min=self.dict[key]
+        else:
+            del(self.dict[key])
+            i=1
+            while i in self.count and self.count[i]==[]:
+                i+=1
+            if i in self.count: self.min=i
+            else: self.min=0
+
+    def getMaxKey(self):
+        """
+        :rtype: str
+        """
+        if self.max==0: return ""
+        return self.count[self.max][0]
+
+    def getMinKey(self):
+        """
+        :rtype: str
+        """
+        if self.min==0: return ""
+        return self.count[self.min][0]
+
+
+# Your AllOne object will be instantiated and called as such:
+# obj = AllOne()
+# obj.inc(key)
+# obj.dec(key)
+# param_3 = obj.getMaxKey()
+# param_4 = obj.getMinKey()
