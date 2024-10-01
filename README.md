@@ -26,6 +26,7 @@
 - [2024-09-26: Problem #731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
 - [2024-09-25: Problem #641 - Design Circular Deque](https://leetcode.com/problems/design-circular-deque/description)
 - [2024-09-25: Problem #432 - All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description)
-- [2024-09-25: Problem #1381 - Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/description)
+- [2024-09-29: Problem #1381 - Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/description)
+- [2024-10-01: Problem #1497 - Check If Array Pairs Are Divisible by k](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/description)
 - [2024-09-25: Problem 731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
 - [2024-09-25: Problem 731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
