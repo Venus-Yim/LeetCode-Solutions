@@ -1,0 +1,25 @@
+class Solution(object):
+    def canArrange(self, arr, k):
+        """
+        :type arr: List[int]
+        :type k: int
+        :rtype: bool
+        """
+        dict={}
+        for num in arr:
+            if num%k in dict:
+                dict[num%k]+=1
+            else:
+                dict[num%k]=1
+        
+        for index in arr:
+            if index%k in dict and (k-index)%k in dict:
+                if dict[index%k]>0 or dict[(k-index)%k]>0:
+                    dict[index%k]-=1
+                    dict[(k-index)%k]-=1
+                if dict[index%k]<0 or dict[(k-index)%k]<0:
+                    return False
+            else:
+                return False
+        
+        return True
