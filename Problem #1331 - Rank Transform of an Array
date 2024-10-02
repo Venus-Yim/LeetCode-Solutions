@@ -1,0 +1,14 @@
+class Solution(object):
+    def arrayRankTransform(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: List[int]
+        """
+        dic={}
+        sarr=sorted(set(arr))
+        for i in range(len(sarr)):
+            dic[sarr[i]]=i+1
+        for i in range(len(arr)):
+            arr[i]=dic[arr[i]]
+        
+        return arr
