@@ -1,0 +1,13 @@
+int cmp(int* a,int* b){
+    return *a-*b;
+}
+long long dividePlayers(int* skill, int skillSize) {
+    qsort(skill,skillSize,sizeof(int),cmp);
+    int mid=skillSize/2,pairsum=skill[0]+skill[skillSize-1];
+    long long ans=skill[0]*skill[skillSize-1];
+    for(int i=1;i<mid;i++){
+        if(skill[i]+skill[skillSize-i-1]!=pairsum) return -1;
+        ans+=skill[i]*skill[skillSize-i-1];
+    }
+    return ans;
+}
