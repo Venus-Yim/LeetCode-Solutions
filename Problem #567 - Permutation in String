@@ -1,0 +1,31 @@
+class Solution(object):
+    def checkInclusion(self, s1, s2):
+        """
+        :type s1: str
+        :type s2: str
+        :rtype: bool
+        """
+        dict={}
+        total=0
+        l=len(s2)
+        for ch in s1:
+            if ch in dict:
+                dict[ch]+=1
+            else:
+                dict[ch]=1
+            total+=1
+        for i in range(l-total+1):
+            if s2[i] in dict:
+                dict2=dict.copy()
+                dict2[s2[i]]-=1
+                ispm=True
+                for j in range(1,total):
+                    if s2[i+j] not in dict2 or dict2[s2[i+j]]==0:
+                        ispm=False
+                        break
+                    else:
+                        dict2[s2[i+j]]-=1
+                if ispm:
+                    return True
+            
+        return False
