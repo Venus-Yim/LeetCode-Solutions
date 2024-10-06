@@ -30,6 +30,7 @@
 - [2024-10-01: Problem #1497 - Check If Array Pairs Are Divisible by k](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/description)
 - [2024-10-02: Problem #1331 - Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/description)
 - [2024-10-04: Problem #2491 - Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/description)
+- [2024-10-05: Problem 1813 - Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/description)
 - [2024-10-06: Problem 1813 - Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/description)
 - [2024-10-07: Problem #731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
 - [2024-10-07: Problem #731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
