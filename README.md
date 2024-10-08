@@ -37,5 +37,6 @@
 - [2024-10-08: Problem #71 - Simplify Path](https://leetcode.com/problems/simplify-path/description)
 - [2024-10-08: Problem #155 - Min Stack](https://leetcode.com/problems/min-stack/description)
 - [2024-10-08: Problem #50 - Pow(x, n)](https://leetcode.com/problems/powx-n/description)
+- [2024-10-09: Problem #172 - Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/description)
 - [2024-10-09: Problem #731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
 - [2024-10-09: Problem #731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
