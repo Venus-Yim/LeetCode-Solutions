@@ -1,0 +1,31 @@
+class Solution(object):
+    def myPow(self, x, n):
+        """
+        :type x: float
+        :type n: int
+        :rtype: float
+        """
+        if(n==0):
+            return 1
+        if(x==0):
+            return 0
+        dic={}
+        sign=1
+        if(n<0):
+            sign=-1
+            n=-n
+
+        def Pow(x,n):
+            if(n==1):
+                return x
+            tmp=n/2
+            if tmp not in dic:
+                dic[tmp]=Pow(x,tmp)
+            if(n%2==1):
+                return dic[tmp]*dic[tmp]*x
+            else:
+                return dic[tmp]*dic[tmp]
+        if(sign==1):
+            return Pow(x,n)
+        else:
+            return 1/Pow(x,n)
