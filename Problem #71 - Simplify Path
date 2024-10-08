@@ -1,0 +1,20 @@
+class Solution(object):
+    def simplifyPath(self, path):
+        """
+        :type path: str
+        :rtype: str
+        """
+        dire = [i for i in path.split("/") if i != ""]
+        ans=[""]*100
+        i=0
+        n=0
+        for i in range(len(dire)):
+            if(dire[i]==".."):
+                if(n>0):
+                    n-=1
+            elif(dire[i]!="."): 
+                ans[n]=dire[i]
+                n+=1
+            print(n)
+        path="/".join(ans[0:n])
+        return "/"+path
