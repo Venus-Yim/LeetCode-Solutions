@@ -33,5 +33,6 @@
 - [2024-10-05: Problem #567 - Permutation in String](https://leetcode.com/problems/permutation-in-string/description)
 - [2024-10-06: Problem #1813 - Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/description)
 - [2024-10-07: Problem #2696 - Minimum String Length After Removing Substrings](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/description)
-- [2024-10-08: Problem #731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
-- [2024-10-08: Problem #731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
+- [2024-10-08: Problem #1963 - Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/description)
+- [2024-10-09: Problem #731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
+- [2024-10-09: Problem #731 - My Calendar II](https://leetcode.com/problems/my-calendar-ii/description)
