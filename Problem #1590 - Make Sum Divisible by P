@@ -1,0 +1,86 @@
+""""
+class Solution(object):
+    def minSubarray(self, nums, p):
+        '''
+        :type nums: List[int]
+        :type p: int 16 3 19
+        :rtype: int
+        '''
+        l=len(nums)
+        
+        pfs=[0]*(l+1)
+        sfs=[0]*(l+1)
+        for i in range(0,l):
+            pfs[i+1]=(pfs[i]+nums[i])%p
+            '''
+            pfs[i]: prefix sum before nums[i](not included)
+            '''
+        if(pfs[l]==0):return 0
+        for i in range(l-1,-1,-1):
+            sfs[i]=sfs[i+1]+nums[i]
+            '''
+            sfs[i]: surfix sum after nums[i](included)
+            sfs[i]=pfs[l]-pfs[i]
+            '''
+        
+        for i in range(1,l):
+            for j in range(l-i+1):
+                if(pfs[j]+sfs[j+i])%p==0:
+                    return i
+        return -1
+
+class Solution(object):
+    def minSubarray(self, nums, p):
+        '''
+        :type nums: List[int]
+        :type p: int 16 3 19
+        :rtype: int
+        '''
+        l=len(nums)
+        
+        pfs=[0]*(l+1)
+        for i in range(0,l):
+            pfs[i+1]=(pfs[i]+nums[i])%p
+            '''
+            pfs[i]: prefix sum before nums[i](not included)
+            '''
+        if(pfs[l]==0):return 0
+        
+        
+        for i in range(1,l):
+            for j in range(l-i+1):
+                if(pfs[j]+pfs[l])%p==pfs[j+i]:
+                    return i
+        return -1
+"""
+class Solution(object):
+    def minSubarray(self, nums, p):
+        '''
+        :type nums: List[int]
+        :type p: int
+        :rtype: int
+        '''
+        l = len(nums)
+        
+        # Compute the total sum modulo p
+        totalSum = sum(nums) % p
+        if totalSum == 0:
+            return 0  # If total sum is already divisible by p
+        
+        # Hash map to store prefix sums mod p and their indices
+        prefixMod = {0: -1}
+        prefixSum = 0
+        minLength = l
+        
+        for i in range(l):
+            prefixSum = (prefixSum + nums[i]) % p
+            # Calculate the target modulo to balance out the remainder
+            targetMod = (prefixSum - totalSum + p) % p
+            
+            if targetMod in prefixMod:
+                minLength = min(minLength, i - prefixMod[targetMod])
+            
+            # Store the current prefix sum modulo with its index
+            prefixMod[prefixSum] = i
+
+        return minLength if minLength < l else -1
