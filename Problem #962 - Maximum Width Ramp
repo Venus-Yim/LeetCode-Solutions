@@ -1,0 +1,30 @@
+/*int maxWidthRamp(int* nums, int numsSize) {
+    for(int l=numsSize-1;l>0;l--)
+        for(int i=0;i<numsSize-l;i++)
+            if(nums[i]<=nums[i+l]) return l;
+        
+    return 0;
+}*/
+int maxWidthRamp(int* nums, int numsSize) {
+    int max=-1,l=0,ans=0;
+    int* maxright=(int*)malloc(sizeof(int)*numsSize);
+    for(int i=numsSize-1;i>-1;i--){
+        if(nums[i]>max)max=nums[i];
+        maxright[i]=max;
+    }
+
+    /*while(r<numsSize){
+        while(r<numsSize && nums[l]<=maxright[r]) r++;
+        if(r>l)r--;
+        if(r-l>ans)ans=r-l;
+        while(l<r && nums[l]<nums[l+1])l++;
+        l++;
+        r=l+1;
+    }*/
+    for(int r=0;r<numsSize;r++){
+        while(nums[l]>maxright[r]) l++;
+        if(r-l>ans)ans=r-l;
+    }
+
+    return ans;
+}
