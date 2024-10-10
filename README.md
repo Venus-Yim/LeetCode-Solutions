@@ -40,5 +40,5 @@
 - [2024-10-09: Problem #172 - Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/description)
 - [2024-10-09: Problem #921 - Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description)
 - [2024-10-09: Problem #1590 - Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/description)
-- [2024-10-10: Problem #](https://leetcode.com/problems//description)
+- [2024-10-10: Problem #962 - Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/description)
 - [2024-10-10: Problem #](https://leetcode.com/problems//description)
