@@ -1,0 +1,38 @@
+import heapq
+class Task:
+    def __init__(self, priority, index):
+        self.priority = priority
+        self.index = index
+
+    def __lt__(self, other):
+        return self.priority < other.priority
+
+    def __repr__(self):
+        return "({}, {})".format(self.priority, self.index)
+class Solution(object):
+
+    def smallestChair(self, times, targetFriend):
+        """
+        :type times: List[List[int]]
+        :type targetFriend: int
+        :rtype: int
+        """
+        endtime=times[targetFriend][0]
+        dct = {item[0]: item[1] for item in times}
+        empty_seat=[i for i in range(len(times))]
+        ocp_seat=[]
+
+        t=1
+        while(t<endtime):
+            while len(ocp_seat)>0 and t==ocp_seat[0].priority:
+                heapq.heappush(empty_seat, ocp_seat[0].index)
+                heapq.heappop(ocp_seat)
+            if t in dct:
+                heapq.heappush(ocp_seat, Task(dct[t],heapq.heappop(empty_seat)))
+            t+=1
+        while len(ocp_seat)>0 and t==ocp_seat[0].priority:
+            heapq.heappush(empty_seat, ocp_seat[0].index)
+            heapq.heappop(ocp_seat)
+        
+        return heapq.heappop(empty_seat)
+        
