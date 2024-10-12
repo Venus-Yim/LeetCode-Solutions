@@ -42,4 +42,5 @@
 - [2024-10-09: Problem #1590 - Make Sum Divisible by P](https://leetcode.com/problems/make-sum-divisible-by-p/description)
 - [2024-10-10: Problem #962 - Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/description)
 - [2024-10-11: Problem #1942 - The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/description)
-- [2024-10-10: Problem #](https://leetcode.com/problems//description)
+- [2024-10-12: Problem #2406 - Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/description)
+- [2024-10-12: Problem #](https://leetcode.com/problems//description)
