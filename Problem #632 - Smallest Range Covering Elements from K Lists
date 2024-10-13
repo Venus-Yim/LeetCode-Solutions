@@ -1,0 +1,31 @@
+import heapq;
+class Solution(object):
+    
+    def smallestRange(self, nums):
+        """
+        :type nums: List[List[int]]
+        :rtype: List[int]
+        """
+        heap=[]
+        cur_max=nums[0][0]
+
+        for i in range(len(nums)):
+            heapq.heappush(heap,(nums[i][0],i,0))
+            cur_max=max(cur_max,nums[i][0])
+        
+        ans=[-100000,100000]
+
+        while heap:
+            cur_min, row, idx = heapq.heappop(heap)
+
+            if cur_max-cur_min<ans[1]-ans[0]:
+                ans=[cur_min,cur_max]
+
+            if idx+1 == len(nums[row]):
+                break
+            
+            nextval = nums[row][idx + 1]
+            heapq.heappush(heap, (nextval, row, idx + 1))
+            cur_max = max(cur_max, nextval)
+
+        return ans
