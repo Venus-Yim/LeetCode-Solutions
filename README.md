@@ -44,4 +44,5 @@
 - [2024-10-11: Problem #1942 - The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/description)
 - [2024-10-12: Problem #2406 - Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/description)
 - [2024-10-13: Problem #632 - Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description)
-- [2024-10-13: Problem #](https://leetcode.com/problems//description)
+- [2024-10-14: Problem #2530 - Maximal Score After Applying K Operations](https://leetcode.com/problems/maximal-score-after-applying-k-operations/description)
+- [2024-10-14: Problem #](https://leetcode.com/problems//description)
