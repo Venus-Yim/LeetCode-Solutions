@@ -1,0 +1,20 @@
+class Solution(object):
+    def minimumSteps(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        s=list(s)
+        cnt=0
+        l=0
+        r=len(s)-1
+        while(l<r):
+            while l<r and s[l]=="0":l+=1
+            while l<r and s[r]=="1":r-=1
+            if l<r:
+                cnt+=r-l
+                s[l]="1"
+                s[r]="0"
+                l+=1
+                r-=1
+        return cnt
