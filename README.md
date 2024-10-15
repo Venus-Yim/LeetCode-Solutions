@@ -48,4 +48,5 @@
 - [2024-10-14: Problem #215 - Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description)
 - [2024-10-15: Problem #2938 - Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/description)
 - [2024-10-15: Problem #373 - Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description)
+- [2024-10-15: Problem #70 - Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description)
 - [2024-10-15: Problem #](https://leetcode.com/problems//description)
