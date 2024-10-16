@@ -1,0 +1,35 @@
+import heapq
+class Solution(object):
+    def longestDiverseString(self, a, b, c):
+        """
+        :type a: int
+        :type b: int
+        :type c: int
+        :rtype: str
+        """
+        heap=[]
+        heapq.heappush(heap,(-a,"a"))
+        heapq.heappush(heap,(-b,"b"))
+        heapq.heappush(heap,(-c,"c"))
+        pattern=[]
+        while True:
+            t1,ch1=heapq.heappop(heap)
+            t2,ch2=heapq.heappop(heap)
+            if t1==0:
+                break
+            pattern.append(ch1)
+            heapq.heappush(heap,(t1+1,ch1))
+            if t2==0:
+                break
+            pattern.append(ch2)
+            heapq.heappush(heap,(t2+1,ch2))
+            
+        print(heap)
+        print(pattern)
+        t,ch=heapq.heappop(heap)
+        for i in range(len(pattern)):
+            if(t==0):break
+            if pattern[i]==ch and (i==0 or pattern[i-1]!=ch) and (i==len(pattern)-1 or pattern[i+1]!=ch):
+                pattern[i]=ch+ch
+                t+=1
+        return "".join(pattern)
