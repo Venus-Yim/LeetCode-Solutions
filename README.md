@@ -49,4 +49,5 @@
 - [2024-10-15: Problem #2938 - Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/description)
 - [2024-10-15: Problem #373 - Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description)
 - [2024-10-15: Problem #70 - Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description)
-- [2024-10-15: Problem #](https://leetcode.com/problems//description)
+- [2024-10-16: Problem #1405 - Longest Happy String](https://leetcode.com/problems/longest-happy-string/description)
+- [2024-10-16: Problem #](https://leetcode.com/problems//description)
