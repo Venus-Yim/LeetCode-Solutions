@@ -1,0 +1,24 @@
+import heapq
+class Solution(object):
+    def maximumSwap(self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+        digits = [int(digit) for digit in str(num)]
+        heap=[]
+        for i in range(len(digits)):
+            heapq.heappush(heap,-digits[i])
+        i=0
+        cur=-heap[0]
+        while(i<len(digits)-1 and digits[i]==cur):
+            i+=1
+            heapq.heappop(heap)
+            cur=-heap[0]
+        j=len(digits)-1
+        while(j>0 and digits[j]!=cur):
+            j-=1
+        tmp=digits[i]
+        digits[i]=digits[j]
+        digits[j]=tmp
+        return int("".join(map(str, digits)))
