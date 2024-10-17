@@ -50,4 +50,5 @@
 - [2024-10-15: Problem #373 - Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description)
 - [2024-10-15: Problem #70 - Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description)
 - [2024-10-16: Problem #1405 - Longest Happy String](https://leetcode.com/problems/longest-happy-string/description)
-- [2024-10-16: Problem #](https://leetcode.com/problems//description)
+- [2024-10-17: Problem #670 - Maximum Swap](https://leetcode.com/problems/maximum-swap/description)
+- [2024-10-17: Problem #](https://leetcode.com/problems//description)
