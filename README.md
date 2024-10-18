@@ -51,4 +51,5 @@
 - [2024-10-15: Problem #70 - Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description)
 - [2024-10-16: Problem #1405 - Longest Happy String](https://leetcode.com/problems/longest-happy-string/description)
 - [2024-10-17: Problem #670 - Maximum Swap](https://leetcode.com/problems/maximum-swap/description)
-- [2024-10-17: Problem #](https://leetcode.com/problems//description)
+- [2024-10-18: Problem #2044 - Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/description)
+- [2024-10-18: Problem #](https://leetcode.com/problems//description)
