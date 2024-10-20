@@ -53,4 +53,5 @@
 - [2024-10-17: Problem #670 - Maximum Swap](https://leetcode.com/problems/maximum-swap/description)
 - [2024-10-18: Problem #2044 - Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/description)
 - [2024-10-19: Problem #1545 - Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/description)
-- [2024-10-19: Problem #](https://leetcode.com/problems//description)
+- [2024-10-20: Problem #1106 - Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/description)
+- [2024-10-20: Problem #](https://leetcode.com/problems//description)
