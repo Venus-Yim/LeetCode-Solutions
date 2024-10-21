@@ -1,0 +1,16 @@
+class Solution(object):    
+    def maxUniqueSplit(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        def backtrack(l,set):
+            if l==len(s): return 0
+            ans=0
+            for r in range(l+1,len(s)+1):
+                if s[l:r] not in set:
+                    set.add(s[l:r])
+                    ans=max(ans,1+backtrack(r,set))
+                    set.remove(s[l:r])
+            return ans
+        return backtrack(0,set())
