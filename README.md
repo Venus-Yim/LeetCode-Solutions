@@ -56,4 +56,5 @@
 - [2024-10-20: Problem #1106 - Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/description)
 - [2024-10-21: Problem #1593 - Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/description)
 - [2024-10-22: Problem #2583 - Kth Largest Sum in a Binary Tree](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description)
+- [2024-10-22: Problem #198 - House Robber](https://leetcode.com/problems/house-robber/description)
 - [2024-10-22: Problem #](https://leetcode.com/problems//description)
