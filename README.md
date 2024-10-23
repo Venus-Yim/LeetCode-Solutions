@@ -57,4 +57,5 @@
 - [2024-10-21: Problem #1593 - Split a String Into the Max Number of Unique Substrings](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/description)
 - [2024-10-22: Problem #2583 - Kth Largest Sum in a Binary Tree](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description)
 - [2024-10-22: Problem #198 - House Robber](https://leetcode.com/problems/house-robber/description)
-- [2024-10-22: Problem #](https://leetcode.com/problems//description)
+- [2024-10-23: Problem #2641 - Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii/description)
+- [2024-10-23: Problem #](https://leetcode.com/problems//description)
