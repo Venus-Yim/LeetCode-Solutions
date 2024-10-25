@@ -1,0 +1,17 @@
+class Solution:
+    def removeSubfolders(self, folder: List[str]) -> List[str]:
+        newfolder=set()
+        folder.sort(key=len)
+
+        for route in folder:
+            i=1
+            noverlap=True
+            while(i<len(route)):
+                while(i<len(route) and route[i]!="/"):i+=1
+                if route[:i]in newfolder:
+                    noverlap=False
+                    break
+                i+=1
+            if noverlap: newfolder.add(route)
+        
+        return list(newfolder)
