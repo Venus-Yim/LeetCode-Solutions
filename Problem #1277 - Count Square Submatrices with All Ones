@@ -1,0 +1,25 @@
+class Solution:
+    def countSquares(self, matrix: List[List[int]]) -> int:
+        def searchsquare(matrix,length,colen,rolen):
+            ans=0
+            def checkone(matrix,length,starti,startj):
+                for i in range(starti,starti+length):
+                    for j in range(startj,startj+length):
+                        if matrix[i][j]==0: return 0
+                return 1
+            for i in range(colen-length+1):
+                for j in range(rolen-length+1):
+                    ans+=checkone(matrix,length,i,j)
+            return ans
+
+        a=len(matrix)
+        b=len(matrix[0])
+        maxl=min(a,b)
+        ans=0
+        for i in range(1,maxl+1):
+            tmp=searchsquare(matrix,i,a,b)
+            if tmp==0: break
+            ans+=tmp
+
+        return ans
+        
