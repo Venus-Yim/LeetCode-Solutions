@@ -1,4 +1,4 @@
-class Solution:
+'''class Solution:
     def countSquares(self, matrix: List[List[int]]) -> int:
         def searchsquare(matrix,length,colen,rolen):
             ans=0
@@ -21,5 +21,24 @@ class Solution:
             if tmp==0: break
             ans+=tmp
 
+        return ans'''
+class Solution:
+    def countSquares(self, matrix: List[List[int]]) -> int:
+        a=len(matrix)
+        b=len(matrix[0])
+        maxlen=min(a,b)
+        cnt=[[0] * (b+1) for _ in range(a+1)]
+        for i in range(a):
+            for j in range(b):
+                cnt[i+1][j+1]=cnt[i][j+1]+cnt[i+1][j]-cnt[i][j]
+                if matrix[i][j]==0:cnt[i+1][j+1]+=1
+        ans=a*b-cnt[a][b]
+        for l in range(1,maxlen):
+            tmp=0
+            for i in range(1,a+1-l):
+                for j in range(1,b+1-l):
+                    if cnt[i+l][j+l]-cnt[i+l][j-1]-cnt[i-1][j+l]+cnt[i-1][j-1]==0: tmp+=1
+            if tmp==0:break
+            ans+=tmp
         return ans
         
