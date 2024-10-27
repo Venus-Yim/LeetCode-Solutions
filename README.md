@@ -61,4 +61,6 @@
 - [2024-10-24: Problem #951 - Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/description)
 - [2024-10-24: Problem #57 - Insert Interval](https://leetcode.com/problems/insert-interval/description)
 - [2024-10-25: Problem #1233 - Remove Sub-Folders from the Filesystem](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/description)
-- [2024-10-25: Problem #](https://leetcode.com/problems//description)
+- [2024-10-26: Problem #2458 - Height of Binary Tree After Subtree Removal Queries](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/description)
+- [2024-10-27: Problem #1277 - Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones/description)
+- [2024-10-28: Problem #](https://leetcode.com/problems//description)
