@@ -1,0 +1,48 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def treeQueries(self, root: Optional[TreeNode], queries: List[int]) -> List[int]:
+        ans=[]
+        height_to_val={}
+        val_to_height=[0]*100001
+        val_to_chihgt=[0]*100001
+        level_to_max=[()]*100001
+
+        def deepsearch(node,height):
+            if(node==None): return 0
+            val_to_height[node.val]=height
+            if height not in height_to_val:
+                height_to_val[height] = []
+            height_to_val[height].append(node.val)
+            chihgt=max(deepsearch(node.left,height+1),deepsearch(node.right,height+1))
+            val_to_chihgt[node.val]=chihgt
+            return chihgt+1
+        
+        deepsearch(root,0)
+        for key in height_to_val:
+            max1=-1
+            max2=-1
+            index=-1
+            for node in height_to_val[key]:
+                if val_to_chihgt[node]>max1:
+                    index=node
+                    max2=max1
+                    max1=val_to_chihgt[node]
+                elif val_to_chihgt[node]>max2:
+                    max2=val_to_chihgt[node]
+            level_to_max[key]=(index,max1,max2)
+        print(level_to_max)
+        for query in queries:
+            max_chihgt=0
+            node,max1,max2=level_to_max[val_to_height[query]]
+            if(query==node):
+                max_chihgt=max2
+            else:
+                max_chihgt=max1
+            ans.append(max_chihgt+val_to_height[query])
+        
+        return ans
