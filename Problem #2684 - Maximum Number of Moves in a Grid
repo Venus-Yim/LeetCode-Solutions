@@ -1,0 +1,21 @@
+class Solution:
+    def maxMoves(self, grid: List[List[int]]) -> int:
+        dp=[[-1]*len(grid[0]) for _ in range(len(grid))]
+        for i in range(len(grid)):
+            dp[i][0]=0
+        ans=0
+
+        for j in range(len(grid[i])-1):
+            for i in range(len(grid)):
+                if dp[i][j]>-1:
+                    if i>0 and grid[i-1][j+1]>grid[i][j]:
+                        dp[i-1][j+1]=max(dp[i-1][j+1],dp[i][j]+1)
+                    if grid[i][j+1]>grid[i][j]:
+                        dp[i][j+1]=max(dp[i][j+1],dp[i][j]+1)
+                    if i<len(grid)-1 and grid[i+1][j+1]>grid[i][j]:
+                        dp[i+1][j+1]=dp[i][j]+1
+        for column in dp:
+            for num in column:
+                if num>ans: ans=num
+        
+        return ans
