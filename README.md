@@ -67,4 +67,5 @@
 - [2024-10-28: Problem #92 - Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description)
 - [2024-10-28: Problem #138 - Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description)
 - [2024-10-29: Problem #2684 - Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/description)
+- [2024-10-29: Problem #150 - Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description)
 - [2024-10-29: Problem #](https://leetcode.com/problems//description)
