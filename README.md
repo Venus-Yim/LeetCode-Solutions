@@ -69,3 +69,6 @@
 - [2024-10-29: Problem #2684 - Maximum Number of Moves in a Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/description)
 - [2024-10-29: Problem #150 - Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description)
 - [2024-10-29: Problem #](https://leetcode.com/problems//description)
+- [2024-10-30: Problem #](https://leetcode.com/problems//description)
+- [2024-10-31: Problem #](https://leetcode.com/problems//description)
+- [2024-11-01: Problem #1957 - Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/description)
