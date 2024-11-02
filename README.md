@@ -72,3 +72,5 @@
 - [2024-10-30: Problem #](https://leetcode.com/problems//description)
 - [2024-10-31: Problem #](https://leetcode.com/problems//description)
 - [2024-11-01: Problem #1957 - Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/description)
+- [2024-11-02: Problem #2490 - Circular Sentence](https://leetcode.com/problems/circular-sentence/description)
+- [2024-11-02: Problem #](https://leetcode.com/problems//description)
