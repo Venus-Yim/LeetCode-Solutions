@@ -75,3 +75,5 @@
 - [2024-11-02: Problem #2490 - Circular Sentence](https://leetcode.com/problems/circular-sentence/description)
 - [2024-11-03: Problem #796 - Rotate String](https://leetcode.com/problems//description)
 - [2024-11-04: Problem #](https://leetcode.com/problems//description)
+- [2024-11-05: Problem #2914 - Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/description)
+- [2024-11-06: Problem #](https://leetcode.com/problems//description)
