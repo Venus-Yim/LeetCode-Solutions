@@ -1,0 +1,17 @@
+class Solution:
+    def canSortArray(self, nums: List[int]) -> bool:
+        setbit=[0]*len(nums)
+        for i in range(len(nums)):
+            k=nums[i]
+            while(k>0):
+                setbit[i]+=k%2
+                k=k//2
+        
+        for i in range(len(nums)):
+            for j in range(0, len(nums) - i - 1):
+                if nums[j] > nums[j + 1]:
+                    if setbit[j]!=setbit[j+1]: return False
+                    nums[j], nums[j + 1] = nums[j + 1], nums[j]
+
+        return True
+        
