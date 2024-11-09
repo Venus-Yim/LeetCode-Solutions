@@ -1,0 +1,21 @@
+class Solution:
+    def minEnd(self, n: int, x: int) -> int:
+        l=x.bit_length()
+        zerobit=[]
+        n-=1
+        for i in range(l):
+            if (x>>i)&1 == 0:
+                zerobit.append(i)
+        while n>int(pow(2,len(zerobit))-1):
+            zerobit.append(l)
+            l+=1
+        ans=x
+        i=0
+        while(n):
+            if n&1==1:
+                ans^=1<<zerobit[i]
+            i+=1
+            n=n>>1
+        
+        return ans
+        
