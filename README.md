@@ -79,4 +79,5 @@
 - [2024-11-06: Problem #3011 - Find if Array Can Be Sorted](https://leetcode.com/problems/find-if-array-can-be-sorted/description)
 - [2024-11-07: Problem #2275 - Largest Combination With Bitwise AND Greater Than Zero](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description)
 - [2024-11-08: Problem #1829 - Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/description)
-- [2024-11-09: Problem #](https://leetcode.com/problems//description)
+- [2024-11-09: Problem #3133 - Minimum Array End](https://leetcode.com/problems/minimum-array-end/description)
+- [2024-11-10: Problem #](https://leetcode.com/problems//description)
