@@ -84,3 +84,4 @@
 - [2024-11-11: Problem #](https://leetcode.com/problems//description)
 - [2024-11-12: Problem #](https://leetcode.com/problems//description)
 - [2024-11-13: Problem #2563 - Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/description)
+- [2024-11-14: Problem #2064 - Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/description)
