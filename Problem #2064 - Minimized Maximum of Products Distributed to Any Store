@@ -1,0 +1,14 @@
+import heapq
+class Solution:
+    def minimizedMaximum(self, n: int, quantities: List[int]) -> int:
+        heap=[]
+        for q in quantities:
+            heapq.heappush(heap,(-q,(q,1)))
+            n-=1
+        while(n):
+            _,(q,m)=heapq.heappop(heap)
+            heapq.heappush(heap,(-q/(m+1),(q,(m+1))))
+            n-=1
+        ans,(_,_)=heapq.heappop(heap)
+        return math.ceil(-ans)
+        
