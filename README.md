@@ -85,3 +85,8 @@
 - [2024-11-12: Problem #](https://leetcode.com/problems//description)
 - [2024-11-13: Problem #2563 - Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/description)
 - [2024-11-14: Problem #2064 - Minimized Maximum of Products Distributed to Any Store](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/description)
+- [2024-11-15: Problem #](https://leetcode.com/problems//description)
+- [2024-11-16: Problem #](https://leetcode.com/problems//description)
+- [2024-11-17: Problem #](https://leetcode.com/problems//description)
+- [2024-11-18: Problem #2461 - Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description)
+- [2024-11-19: Problem #](https://leetcode.com/problems//description)
