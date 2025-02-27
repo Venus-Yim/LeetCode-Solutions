@@ -89,4 +89,5 @@
 - [2024-11-16: Problem #](https://leetcode.com/problems//description)
 - [2024-11-17: Problem #](https://leetcode.com/problems//description)
 - [2024-11-18: Problem #2461 - Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description)
-- [2024-11-19: Problem #](https://leetcode.com/problems//description)
+- [2025-02-26: Problem #873 - Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/description)
+- [2025-02-26: Problem #](https://leetcode.com/problems//description)
