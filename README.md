@@ -92,4 +92,5 @@
 - [2025-02-26: Problem #873 - Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/description)
 - [2025-03-03: Problem #1780 - Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description)
 - [2025-03-04: Problem #2579 - Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description)
+- [2025-03-05: Problem #2965 - Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/description)
 - [2025-03-06: Problem #](https://leetcode.com/problems//description)
