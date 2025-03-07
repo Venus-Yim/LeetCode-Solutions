@@ -1,0 +1,23 @@
+import math
+class Solution:
+    def closestPrimes(self, left: int, right: int) -> List[int]:
+        if right < 2:
+            return [-1, -1]
+        isprime=[True]*(right+1)
+        isprime[0],isprime[1]=False,False
+        for i in range(2,int(sqrt(right))+1):
+            if isprime[i]:
+                for j in range(i*i,right+1,i):
+                    isprime[j]=False
+
+
+        prime=[num for num in range(max(2,left),right+1) if isprime[num]]
+        if len(prime) < 2:
+            return [-1, -1]
+        minl=right-left+1
+        ans=[-1,-1]
+        for i in range(len(prime)-1):
+            if prime[i+1]-prime[i]<minl:
+                minl=prime[i+1]-prime[i]
+                ans=[prime[i],prime[i+1]]
+        return ans
