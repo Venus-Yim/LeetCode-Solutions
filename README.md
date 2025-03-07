@@ -93,4 +93,5 @@
 - [2025-03-03: Problem #1780 - Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description)
 - [2025-03-04: Problem #2579 - Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description)
 - [2025-03-05: Problem #2965 - Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/description)
-- [2025-03-06: Problem #](https://leetcode.com/problems//description)
+- [2025-03-06: Problem #2523 - Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/description)
+- [2025-03-07: Problem #](https://leetcode.com/problems//description)
