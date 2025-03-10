@@ -1,0 +1,24 @@
+class Solution:
+    def countOfSubstrings(self, word: str, k: int) -> int:
+        def atleast(k):
+            vol=defaultdict(int)
+            nonvol=0
+            l=0
+            ans=0
+            for r in range(len(word)):
+                if word[r] in "aeiou":
+                    vol[word[r]]+=1
+                else:
+                    nonvol+=1
+                while (len(vol)==5) and (nonvol>=k):
+                    ans+=(len(word)-r)
+                    if word[l] in "aeiou":
+                        vol[word[l]]-=1
+                        if vol[word[l]]==0:
+                            vol.pop(word[l])
+                    else:
+                        nonvol-=1
+                    l+=1
+            return ans
+        
+        return atleast(k)-atleast(k+1)
