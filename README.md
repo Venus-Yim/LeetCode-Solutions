@@ -95,4 +95,5 @@
 - [2025-03-05: Problem #2965 - Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/description)
 - [2025-03-06: Problem #2523 - Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/description)
 - [2025-03-07: Problem #3208 - Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/description)
-- [2025-03-07: Problem #](https://leetcode.com/problems//description)
+- [2025-03-08: Problem #3306 - Count of Substrings Containing Every Vowel and K Consonants II](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/description)
+- [2025-03-09: Problem #](https://leetcode.com/problems//description)
