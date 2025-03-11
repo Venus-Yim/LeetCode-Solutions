@@ -1,0 +1,14 @@
+class Solution:
+    def numberOfSubstrings(self, s: str) -> int:
+        cnt=defaultdict(int)
+        l,ans=0,0
+        for r in range(len(s)):
+            cnt[s[r]]+=1
+            while(len(cnt)==3):
+                ans+=(len(s)-r)
+                cnt[s[l]]-=1
+                if(cnt[s[l]]==0):
+                    cnt.pop(s[l])
+                l+=1
+        
+        return ans
