@@ -1,0 +1,13 @@
+import heapq
+class Solution:
+    def repairCars(self, ranks: List[int], cars: int) -> int:
+        min_heap=[]
+        for i in ranks:
+            heapq.heappush(min_heap,(i,i,1))
+        for i in range(cars-1):
+            t,r,n=heapq.heappop(min_heap)
+            heapq.heappush(min_heap,(r*(n+1)*(n+1),r,n+1))
+        
+        
+        t,r,n=heapq.heappop(min_heap)
+        return t
