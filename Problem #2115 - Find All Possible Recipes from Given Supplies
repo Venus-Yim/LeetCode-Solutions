@@ -1,0 +1,22 @@
+import copy
+class Solution:
+    def findAllRecipes(self, recipes: List[str], ingredients: List[List[str]], supplies: List[str]) -> List[str]:
+        mapr=dict(zip(recipes, ingredients))
+        indegree=dict(zip(recipes, map(len, ingredients)))
+
+        q=copy.copy(supplies)
+        i=0
+
+        while(i<len(q)):
+            new=[]
+            for recipe in mapr:
+                if q[i] in mapr[recipe]:
+                    indegree[recipe]-=1
+                    if indegree[recipe]==0:
+                        new.append(recipe)
+            for recipe in new:
+                del mapr[recipe]
+            q.extend(new)
+            i+=1
+
+        return q[len(supplies):]
