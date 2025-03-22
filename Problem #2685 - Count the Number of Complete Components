@@ -1,0 +1,32 @@
+import copy
+class Solution:
+    def countCompleteComponents(self, n: int, edges: List[List[int]]) -> int:
+        res=0
+        def deepsearch(cur):
+            group=[cur]
+            p=copy.copy(v[cur])
+            i=0
+            for point in p:
+                notVisited[point]=False
+            while i<len(p):
+                cur=p[i]
+                i+=1
+                for point in group:
+                    if point not in v[cur] and point!=cur:
+                        return 0
+                for point in v[cur]:
+                    if point not in p:
+                        p.append(point)
+                group.append(cur)
+            return 1
+
+
+        v = [[] for _ in range(n)]
+        notVisited=[True for _ in range(n)]
+        for edge in edges:
+            v[edge[0]].append(edge[1])
+            v[edge[1]].append(edge[0])
+        for i in range(n):
+            if notVisited[i]:
+                res+=deepsearch(i)
+        return res
