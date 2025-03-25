@@ -101,4 +101,5 @@
 - [2025-03-21: Problem #2115 - Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description)
 - [2025-03-22: Problem #2685 - Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components/description)
 - [2025-03-24: Problem #3169 - Count Days Without Meetings](https://leetcode.com/problems/count-days-without-meetings/description)
+- [2025-03-25: Problem #3394 - Check if Grid can be Cut into Sections](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/description)
 - [2025-03-25: Problem #](https://leetcode.com/problems//description)
