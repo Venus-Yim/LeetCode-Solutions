@@ -1,0 +1,20 @@
+class Solution:
+    def minOperations(self, grid: List[List[int]], x: int) -> int:
+        remainder=grid[0][0]%x
+        for row in grid:
+            for num in row:
+                if num%x!=remainder:
+                    return -1
+        
+        dist=[]
+        for row in grid:
+            for num in row:
+                dist.append(num//x)
+        dist.sort()
+
+        center=dist[len(dist)//2]
+        ans=0
+        for num in dist:
+            ans+=abs(num-center)
+        
+        return ans
