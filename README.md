@@ -103,4 +103,5 @@
 - [2025-03-24: Problem #3169 - Count Days Without Meetings](https://leetcode.com/problems/count-days-without-meetings/description)
 - [2025-03-25: Problem #3394 - Check if Grid can be Cut into Sections](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/description)
 - [2025-03-26: Problem #2033 - Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/description)
-- [2025-03-27: Problem #](https://leetcode.com/problems//description)
+- [2025-03-27: Problem #2780 - Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/description)
+- [2025-03-28: Problem #](https://leetcode.com/problems//description)
