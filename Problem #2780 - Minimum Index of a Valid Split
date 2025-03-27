@@ -1,0 +1,27 @@
+class Solution:
+    def minimumIndex(self, nums: List[int]) -> int:
+        l=len(nums)
+        dominant=sorted(nums)[l//2]
+        prefix,suffix=[0]*l,[0]*l
+
+        if nums[0]==dominant:
+            prefix[0]=1
+        for i in range(1,l):
+            prefix[i]=prefix[i-1]
+            if nums[i]==dominant:
+                prefix[i]+=1
+        '''suffix sum can be replaced by prefix[l-1]-prefix[i]
+        slightly improve time effiency
+        
+        if nums[l-1]==dominant:
+            suffix[l-2]=1
+        for i in range(l-2,0,-1):
+            suffix[i-1]=suffix[i]
+            if nums[i]==dominant:
+                suffix[i-1]+=1'''
+        
+        for i in range(l-1):
+            if 2*prefix[i]>i+1 and 2*(prefix[l-1]-prefix[i])>l-i-1:
+                return i
+
+        return -1
