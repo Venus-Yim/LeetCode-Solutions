@@ -95,4 +95,4 @@
 - [2025-03-26: Problem #2033 - Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/description)
 - [2025-03-27: Problem #2780 - Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/description)
 - [2025-03-31: Problem #2551 - Put Marbles in Bags](https://leetcode.com/problems/put-marbles-in-bags/description)
-- [2025-04-01: Problem #](https://leetcode.com/problems//description)
+- [2025-04-01: Problem #2140 - Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/description)
