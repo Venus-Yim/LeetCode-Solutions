@@ -96,3 +96,5 @@
 - [2025-03-27: Problem #2780 - Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/description)
 - [2025-03-31: Problem #2551 - Put Marbles in Bags](https://leetcode.com/problems/put-marbles-in-bags/description)
 - [2025-04-01: Problem #2140 - Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/description)
+- [2025-04-03: Problem #2874 - Maximum Value of an Ordered Triplet II](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/description)
+- [2025-04-04: Problem #](https://leetcode.com/problems//description)
