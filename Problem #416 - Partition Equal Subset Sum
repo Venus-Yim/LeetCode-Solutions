@@ -1,0 +1,16 @@
+class Solution:
+    def canPartition(self, nums: List[int]) -> bool:
+        aim=sum(nums)
+        if aim%2==1:
+            return False
+        else:
+            aim=int(aim/2)
+        
+        dp=[False]*(aim+1)
+        dp[0]=True
+        for num in nums:
+            for i in range(aim,num-1,-1):
+                dp[i]=dp[i] or dp[i-num]
+            if dp[aim]:
+                return dp[aim]
+        return dp[aim]
