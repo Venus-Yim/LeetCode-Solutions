@@ -98,4 +98,5 @@
 - [2025-04-01: Problem #2140 - Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/description)
 - [2025-04-03: Problem #2874 - Maximum Value of an Ordered Triplet II](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/description)
 - [2025-04-07: Problem #416 - Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description)
-- [2025-04-07: Problem #](https://leetcode.com/problems//description)
+- [2025-04-08: Problem #3396 - Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/description)
+- [2025-04-09: Problem #](https://leetcode.com/problems//description)
