@@ -1,0 +1,11 @@
+import math
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        i=len(nums)-1
+        s=set()
+        while(i>-1):
+            if nums[i] in s:
+                return math.ceil((i+1)/3)
+            s.add(nums[i])
+            i-=1
+        return 0
