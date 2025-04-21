@@ -1,0 +1,13 @@
+class Solution:
+    def numberOfArrays(self, differences: List[int], lower: int, upper: int) -> int:
+        startlower,startupper=lower,upper
+        curdif=0
+        l=len(differences)
+
+        for i in range(l):
+            curdif+=differences[i]
+            if i==l-1 or differences[i]*differences[i+1]<0:
+                startlower=max(startlower,lower+curdif)
+                startupper=min(startupper,upper+curdif)
+
+        return max(0,startupper-startlower+1)
