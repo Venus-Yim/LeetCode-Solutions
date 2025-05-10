@@ -101,4 +101,5 @@
 - [2025-04-08: Problem #3396 - Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/description)
 - [2025-04-20: Problem #781 - Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest/description)
 - [2025-04-21: Problem #2145 - Count the Hidden Sequences](https://leetcode.com/problems/count-the-hidden-sequences/description)
-- [2025-04-21: Problem #](https://leetcode.com/problems//description)
+- [2025-05-10: Problem #2918 - Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/description)
+- [2025-05-11: Problem #](https://leetcode.com/problems//description)
