@@ -1,0 +1,45 @@
+MOD = 10**9 + 7
+
+class Solution:
+    def lengthAfterTransformations(self, s: str, t: int, nums: List[int]) -> int:
+        # 1. 构建转移矩阵 M，表示每个字母变成哪些字母
+        M = [[0]*26 for _ in range(26)]
+        for i in range(26):
+            for j in range(1, nums[i] + 1):
+                M[(i + j) % 26][i] += 1  # i → (i+1)%26, ..., (i+nums[i])%26
+
+        # 2. 初始计数向量 cnt：cnt[i] 是字母 i ('a'+i) 出现次数
+        cnt = [0] * 26
+        for ch in s:
+            cnt[ord(ch) - ord('a')] += 1
+
+        # 3. 快速幂计算 M^t
+        def mat_mult(A, B):
+            res = [[0]*26 for _ in range(26)]
+            for i in range(26):
+                for k in range(26):
+                    if A[i][k] == 0: continue
+                    for j in range(26):
+                        res[i][j] = (res[i][j] + A[i][k] * B[k][j]) % MOD
+            return res
+
+        def mat_pow(mat, power):
+            res = [[1 if i == j else 0 for j in range(26)] for i in range(26)]  # 单位矩阵
+            while power:
+                if power % 2 == 1:
+                    res = mat_mult(mat, res)
+                mat = mat_mult(mat, mat)
+                power //= 2
+            return res
+
+        # 4. M^t
+        Mt = mat_pow(M, t)
+
+        # 5. 计算最终 cnt_final = Mt × cnt
+        final_cnt = [0] * 26
+        for i in range(26):
+            for j in range(26):
+                final_cnt[i] = (final_cnt[i] + Mt[i][j] * cnt[j]) % MOD
+
+        # 6. 返回最终所有字符数量之和
+        return sum(final_cnt) % MOD
