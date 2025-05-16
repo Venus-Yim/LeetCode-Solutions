@@ -1,0 +1,28 @@
+from copy import copy
+class Solution:
+    def getWordsInLongestSubsequence(self, words: List[str], groups: List[int]) -> List[str]:
+        n=len(words)
+        d=dict()
+        maxi=0
+        for i in range(n):
+            d[i]=[]
+            for j in range(i):
+                if len(words[i])==len(words[j]) and sum(1 for k in range(len(words[i])) if words[i][k] != words[j][k])==1 and groups[i]!=groups[j]:
+                    d[i].append(j)
+        
+        dp=[1 for _ in range(n)]
+        route=[[] for _ in range(n)]
+
+        for i in range(n):
+            for j in d[i]:
+                if dp[j]+1>dp[i]:
+                    dp[i]=dp[j]+1
+                    route[i]=copy(route[j])
+                    route[i].append(words[j])
+                    if dp[i]>dp[maxi]:
+                        maxi=i
+        
+        route[maxi].append(words[maxi])
+        return route[maxi]
+
+        
