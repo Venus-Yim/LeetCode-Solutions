@@ -104,4 +104,5 @@
 - [2025-05-10: Problem #2918 - Minimum Equal Sum of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/description)
 - [2025-05-13: Problem #3337 - Total Characters in String After Transformations II](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/description)
 - [2025-05-16: Problem #2901 - Longest Unequal Adjacent Groups Subsequence II](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/description)
-- [2025-05-16: Problem #](https://leetcode.com/problems//description)
+- [2025-09-06: Problem #1304 - Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/description)
+- [2025-09-07: Problem #](https://leetcode.com/problems//description)
