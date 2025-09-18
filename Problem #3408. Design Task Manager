@@ -1,0 +1,49 @@
+import heapq
+class TaskManager:
+
+    def __init__(self, tasks: List[List[int]]):
+        self.hp=[]
+        self.tp_to_u={}
+        self.t_to_p={}
+        for task in tasks:
+            heapq.heappush(self.hp,(-task[2],-task[1]))
+            self.tp_to_u[(task[2],task[1])]=task[0]
+            self.t_to_p[task[1]]=task[2]
+
+    def add(self, userId: int, taskId: int, priority: int) -> None:
+        heapq.heappush(self.hp,(-priority,-taskId))
+        self.tp_to_u[(priority,taskId)]=userId
+        self.t_to_p[taskId]=priority
+
+    def edit(self, taskId: int, newPriority: int) -> None:
+        userId=self.tp_to_u[(self.t_to_p[taskId],taskId)]
+        del(self.tp_to_u[(self.t_to_p[taskId],taskId)])
+        heapq.heappush(self.hp,(-newPriority,-taskId))
+        self.tp_to_u[(newPriority,taskId)]=userId
+        self.t_to_p[taskId]=newPriority
+
+    def rmv(self, taskId: int) -> None:
+        del(self.tp_to_u[(self.t_to_p[taskId],taskId)])
+
+    def execTop(self) -> int:
+        if not self.hp:
+            return -1
+        (a,b)=heapq.heappop(self.hp)
+        while (-a,-b) not in self.tp_to_u:
+            if not self.hp:
+                return -1
+            (a,b)=heapq.heappop(self.hp)
+        res=self.tp_to_u[(-a,-b)]
+        del(self.tp_to_u[(-a,-b)])
+        return res
+            
+
+        
+
+
+# Your TaskManager object will be instantiated and called as such:
+# obj = TaskManager(tasks)
+# obj.add(userId,taskId,priority)
+# obj.edit(taskId,newPriority)
+# obj.rmv(taskId)
+# param_4 = obj.execTop()
