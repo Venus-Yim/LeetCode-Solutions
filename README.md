@@ -107,5 +107,6 @@
 - [2025-09-06: Problem #1304 - Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/description)
 - [2025-09-08: Problem #1317 - Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/description)
 - [2025-09-17: Problem #2353 - Design a Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/description)
-- [2025-09-18: Problem #3408. Design Task Manager](https://leetcode.com/problems/design-task-manager/description)
-- [2025-09-19: Problem #](https://leetcode.com/problems//description)
+- [2025-09-18: Problem #3408 - Design Task Manager](https://leetcode.com/problems/design-task-manager/description)
+- [2025-09-23: Problem #3005 - Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description)
+- [2025-09-24: Problem #](https://leetcode.com/problems//description)
