@@ -110,4 +110,5 @@
 - [2025-09-18: Problem #3408 - Design Task Manager](https://leetcode.com/problems/design-task-manager/description)
 - [2025-09-23: Problem #3005 - Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description)
 - [2025-09-24: Problem #166 - Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/description)
+- [2025-09-25: Problem #120 - Triangle](https://leetcode.com/problems/triangle/description)
 - [2025-09-25: Problem #](https://leetcode.com/problems//description)
