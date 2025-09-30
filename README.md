@@ -112,4 +112,5 @@
 - [2025-09-24: Problem #166 - Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/description)
 - [2025-09-25: Problem #120 - Triangle](https://leetcode.com/problems/triangle/description)
 - [2025-09-30: Problem #2221 - Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/description)
-- [2025-09-25: Problem #](https://leetcode.com/problems//description)
+- [2025-09-30: Problem #812 - Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/description)
+- [2025-09-30: Problem #](https://leetcode.com/problems//description)
