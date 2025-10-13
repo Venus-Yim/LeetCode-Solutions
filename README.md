@@ -115,4 +115,5 @@
 - [2025-09-30: Problem #812 - Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area/description)
 - [2025-10-02: Problem #3100- Water Bottles II](https://leetcode.com/problems/water-bottles-ii/description)
 - [2025-10-02: Problem #1518 - Water Bottles](https://leetcode.com/problems/water-bottles/description)
-- [2025-10-02: Problem #](https://leetcode.com/problems//description)
+- [2025-10-13: Problem #2273 - Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description)
+- [2025-10-13: Problem #](https://leetcode.com/problems//description)
