@@ -117,4 +117,5 @@
 - [2025-10-02: Problem #1518 - Water Bottles](https://leetcode.com/problems/water-bottles/description)
 - [2025-10-13: Problem #2273 - Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description)
 - [2025-10-24: Problem #3346 - Maximum Frequency of an Element After Performing Operations I](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/description)
-- [2025-10-27: Problem #](https://leetcode.com/problems//description)
+- [2025-10-27: Problem #2125 - Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description)
+- [2025-10-28: Problem #](https://leetcode.com/problems//description)
