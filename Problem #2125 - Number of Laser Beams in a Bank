@@ -1,0 +1,19 @@
+class Solution:
+    def numberOfBeams(self, bank: List[str]) -> int:
+        res=0
+        while "1" not in bank[0]:
+            del(bank[0])
+            if not bank:
+                return 0
+        last=bank[0].count("1")
+        del(bank[0])
+        cur=0
+
+        for b in bank:
+            cur=b.count("1")
+            if cur>0:
+                res+=cur*last
+                last=cur
+        
+        return res
+        
